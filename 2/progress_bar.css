@@ -1,0 +1,45 @@
+.wrapper {
+  width: 210px
+}
+.progress_bar {
+  width: 100%;
+  height: 13px;
+  position: relative;
+  border: 1px solid #f7f7f7;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.progress_bar__fill {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #86ee46;
+  background: -webkit-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: -moz-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: -o-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+}
+.progress_modern {
+  width: 210px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #86ee46;
+  background: -webkit-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: -moz-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: -o-linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+  background: linear-gradient(bottom, #6cd019 1%, #7bd517 20%, #6acb26 22%, #3CC214 41%, #29BF14 62%, #9af351 100%);
+}
+.progress_bar__value {
+  position: relative;
+  font-size: 11px;
+  vertical-align: top;
+}

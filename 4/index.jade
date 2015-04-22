@@ -1,0 +1,144 @@
+doctype html
+html
+  head
+    title page
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    link(rel="stylesheet", href="./css/normalize.css")
+    link(rel="stylesheet", href="./css/style.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js")
+    script(src="./js/selectivizr-min.js")
+  body
+    .wrapper.clearfix
+
+      header.header_page.clearfix
+        .col_1
+        .col_2
+          nav.wrapper_nav
+            ul.menu.clearfix
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_1 Личный кабинет
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_2 Раздел 1
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_3 Раздел 2
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_4 Раздел 3
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_5 Раздел 4
+              li.menu__element
+                a(href="#").menu__link.menu__link_state_6 Раздел 5
+
+      aside.col_1.clearfix
+        p.info__main TuTuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.
+        p Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собвственному контакт-центру.
+
+      section.col_2
+        .wrapper_title_block.clearfix
+          h2.title_form Заполните форму
+          .wrapper_progress_bar
+            ul.progress_bar
+              li.progress_bar__element.progress_bar__element_complete 1
+              li.progress_bar__element.progress_bar__element_complete 2
+              li.progress_bar__element.progress_bar__element_active 3
+              li.progress_bar__element 4
+              li.progress_bar__element 5
+
+        form.form(action=".", method="GET")
+          .form__row
+            .extra_text
+              em.extra_text__line Общая информация
+
+          .form__row.clearfix
+            .form__col_1
+              label(for="second_name").form__label Фамилия
+              input(type="text", name="second_name", id="second_name").form__input
+            .form__col_1.form_col_sett
+              label(for="first_name").form__label Имя
+              input(type="text", name="first_name", id="first_name").form__input
+            .form__col_2
+              label(for="middle_name").form__label Отчество
+              input(type="text", name="middle_name", id="middle_name").form__input
+
+          .form__row.clearfix
+            .form__col_1.form__col_mobile
+              label.form__label Меняли фамилию?
+              input(type="radio", id="change_last_name_yes", name="change_last_name", value="1").from__radio
+              label(for="change_last_name_yes").form__label_radio Да
+
+              input(type="radio", id="change_last_name_no", name="change_last_name", value="0" checked).from__radio
+              label(for="change_last_name_no").form__label_radio Нет
+
+            .form__col_1.form_col_sett.form__col_mobile
+              label.form__label Пол
+              input(type="radio", id="form_radio_male", name="sex", value="1" checked).from__radio
+              label(for="form_radio_male").form__label_radio Муж
+
+              input(type="radio", id="form_radio_female", name="sex", value="2").from__radio
+              label(for="form_radio_female").form__label_radio Жен
+
+            .form__col_2
+              label(for="form_status").form__label Семейное положение
+              select.form_select(name="status", id="form_status")
+                option(value="1") Женат / Замужем
+                option(value="2") Не женат / Не замужем
+                option(value="3") разведен / разведена
+
+          .form__row.clearfix
+            .form__col_1
+              label(for="form_nationality").form__label Гражданство
+              select.form_select(name="nationality", id="form_nationality")
+                option(value="1") Российская Федерация
+                option(value="2") Англия
+                option(value="3") Франция
+
+            .form__col_2.form_col_sett
+              label(for="form_birthday_day").form__label Дата рождения
+              select(name="form_birthday_day", id="form_birthday_day")
+                option(value="1") 1
+                option(value="2") 2
+                option(value="3") 3
+                option(value="4") 4
+                option(value="5") 5
+                option(value="6") 6
+                option(value="7") 7
+                option(value="8") 8
+                option(value="9") 9
+
+              select(name="form_birthday_month")
+                option(value="1") январь
+                option(value="2") февраль
+                option(value="3") март
+                option(value="4") апрель
+                option(value="5") май
+                option(value="6") июнь
+                option(value="7") июль
+                option(value="8") август
+                option(value="9") сентябрь
+                option(value="10") октябрь
+                option(value="11") ноябрь
+                option(value="12") декабрь
+
+              select(name="form_birthday_year", id="form_birthday_year")
+                option(value="1990") 1990
+                option(value="1991") 1991
+                option(value="1992") 1992
+
+          label(for="birthplace").form__label Место рождения
+          input(type="text", name="birthplace", id="birthplace").form__input
+          .form__note Например, Россия, Комсомольск-на-Амуре
+
+          .form__row_submit.clearfix
+            a(href="#").form__button.form__button_back ← Назад
+            input(type="submit", value="Далее →").form__button.form__button_next
+
+
+
+
+
+
+
+
+
+
+

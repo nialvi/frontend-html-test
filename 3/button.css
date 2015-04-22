@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  padding: 2px 20px;
+  background: #F2F2F2;
+  background: -webkit-linear-gradient(#F2F2F2, #E2E2E2);
+  background: -o-linear-gradient(#F2F2F2, #E2E2E2);
+  background: linear-gradient(#F2F2F2, #E2E2E2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #E5E5E5;
+  border-color: #e5e5e5 #cccccc #a8a8a8;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+.button_small {
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.button_normal {
+  padding: 5px 20px;
+  font-size: 16px;
+
+}
+.button_big {
+  padding: 7px 23px;
+  font-size: 20px;
+}

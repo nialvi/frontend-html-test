@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+    <script src="./js/selectivizr-min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <header class="header_page clearfix">
+        <div class="col_1"></div>
+        <div class="col_2">
+          <nav class="wrapper_nav">
+            <ul class="menu clearfix">
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_1">Личный кабинет</a></li>
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_2">Раздел 1</a></li>
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_3">Раздел 2</a></li>
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_4">Раздел 3</a></li>
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_5">Раздел 4</a></li>
+              <li class="menu__element"><a href="#" class="menu__link menu__link_state_6">Раздел 5</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <aside class="col_1 clearfix">
+        <p class="info__main">TuTuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+        <p>Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собвственному контакт-центру.</p>
+      </aside>
+      <section class="col_2">
+        <div class="wrapper_title_block clearfix">
+          <h2 class="title_form">Заполните форму</h2>
+          <div class="wrapper_progress_bar">
+            <ul class="progress_bar">
+              <li class="progress_bar__element progress_bar__element_complete">1</li>
+              <li class="progress_bar__element progress_bar__element_complete">2</li>
+              <li class="progress_bar__element progress_bar__element_active">3</li>
+              <li class="progress_bar__element">4</li>
+              <li class="progress_bar__element">5</li>
+            </ul>
+          </div>
+        </div>
+        <form action="." method="GET" class="form">
+          <div class="form__row">
+            <div class="extra_text"><em class="extra_text__line">Общая информация</em></div>
+          </div>
+          <div class="form__row clearfix">
+            <div class="form__col_1">
+              <label for="second_name" class="form__label">Фамилия</label>
+              <input type="text" name="second_name" id="second_name" class="form__input">
+            </div>
+            <div class="form__col_1 form_col_sett">
+              <label for="first_name" class="form__label">Имя</label>
+              <input type="text" name="first_name" id="first_name" class="form__input">
+            </div>
+            <div class="form__col_2">
+              <label for="middle_name" class="form__label">Отчество</label>
+              <input type="text" name="middle_name" id="middle_name" class="form__input">
+            </div>
+          </div>
+          <div class="form__row clearfix">
+            <div class="form__col_1 form__col_mobile">
+              <label class="form__label">Меняли фамилию?</label>
+              <input type="radio" id="change_last_name_yes" name="change_last_name" value="1" class="from__radio">
+              <label for="change_last_name_yes" class="form__label_radio">Да</label>
+              <input type="radio" id="change_last_name_no" name="change_last_name" value="0" checked class="from__radio">
+              <label for="change_last_name_no" class="form__label_radio">Нет</label>
+            </div>
+            <div class="form__col_1 form_col_sett form__col_mobile">
+              <label class="form__label">Пол</label>
+              <input type="radio" id="form_radio_male" name="sex" value="1" checked class="from__radio">
+              <label for="form_radio_male" class="form__label_radio">Муж</label>
+              <input type="radio" id="form_radio_female" name="sex" value="2" class="from__radio">
+              <label for="form_radio_female" class="form__label_radio">Жен</label>
+            </div>
+            <div class="form__col_2">
+              <label for="form_status" class="form__label">Семейное положение</label>
+              <select name="status" id="form_status" class="form_select">
+                <option value="1">Женат / Замужем</option>
+                <option value="2">Не женат / Не замужем</option>
+                <option value="3">разведен / разведена</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row clearfix">
+            <div class="form__col_1">
+              <label for="form_nationality" class="form__label">Гражданство</label>
+              <select name="nationality" id="form_nationality" class="form_select">
+                <option value="1">Российская Федерация</option>
+                <option value="2">Англия</option>
+                <option value="3">Франция</option>
+              </select>
+            </div>
+            <div class="form__col_2 form_col_sett">
+              <label for="form_birthday_day" class="form__label">Дата рождения</label>
+              <select name="form_birthday_day" id="form_birthday_day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <select name="form_birthday_month">
+                <option value="1">январь</option>
+                <option value="2">февраль</option>
+                <option value="3">март</option>
+                <option value="4">апрель</option>
+                <option value="5">май</option>
+                <option value="6">июнь</option>
+                <option value="7">июль</option>
+                <option value="8">август</option>
+                <option value="9">сентябрь</option>
+                <option value="10">октябрь</option>
+                <option value="11">ноябрь</option>
+                <option value="12">декабрь</option>
+              </select>
+              <select name="form_birthday_year" id="form_birthday_year">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+              </select>
+            </div>
+          </div>
+          <label for="birthplace" class="form__label">Место рождения</label>
+          <input type="text" name="birthplace" id="birthplace" class="form__input">
+          <div class="form__note">Например, Россия, Комсомольск-на-Амуре</div>
+          <div class="form__row_submit clearfix"><a href="#" class="form__button form__button_back">← Назад</a>
+            <input type="submit" value="Далее →" class="form__button form__button_next">
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

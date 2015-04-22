@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>stars</title>
+  <link rel="stylesheet" href="stars.css">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <ul class="clearfix">
+      <li class="rating_element"></li>
+      <li class="rating_element"></li>
+      <li class="rating_element"></li>
+      <li class="rating_element"></li>
+      <li class="rating_element"></li>
+    </ul>
+  </div>
+  <script>
+  $(function(){
+    var starsHandler = {};
+
+    starsHandler.init = function(nameElem) {
+      var self = this;
+
+      this.elems = $(nameElem);
+      this.elems.hover(this.addClassActive, this.removeClassActive);
+
+      this.elems.click(function(){
+        self.elems.unbind('mouseenter', self.addClassActive);
+        self.elems.unbind('mouseleave', self.removeClassActive);
+        self.addClassActive();
+      });
+    }
+
+    starsHandler.addClassActive = function() {
+      $(this).addClass('rating_element_active')
+        .prevAll()
+        .addClass('rating_element_active');
+    }
+
+    starsHandler.removeClassActive = function() {
+      $(this).removeClass('rating_element_active')
+        .prevAll()
+        .removeClass('rating_element_active');
+    }
+
+    starsHandler.init('.rating_element');
+  });
+  </script>
+</body>
+</html>
